@@ -1,0 +1,29 @@
+{
+    "usuarios": [{
+        "id": 1,
+        "nombre": "Ana López",
+        "correo": "ana@correo.com",
+        "contraseña": "123456",
+        "fecha_registro": "2026-07-13T10:00:00.000Z"
+    }],
+    "cursos": [{
+        "id": 1,
+        "nombre": "Introducción a Programación",
+        "descripcion": "Curso básico para principiantes",
+        "fecha_inicio": "2026-08-01",
+        "fecha_fin": "2026-08-31"
+    }],
+    "inscripciones": [{
+        "id": 1,
+        "usuario_id": 1,
+        "curso_id": 1,
+        "fecha_inscripcion": "2026-07-13T10:05:00.000Z"
+    }],
+    "participantes": [{
+        "id": 1,
+        "nombre": "Carlos Ruiz",
+        "edad": 25,
+        "telefono": "+51-987654321",
+        "correo": "carlos@correo.com"
+    }]
+}

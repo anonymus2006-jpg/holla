@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Formulario de inscripción para guardar datos en Supabase" />
+    <meta name="theme-color" content="#2563eb" />
+    <title>Sistema de Inscripciones</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="welcomeMessage" class="welcome-message" aria-live="polite"></div>
+        <div id="supabaseStatus" class="status" aria-live="polite"></div>
+        <div class="page-header">
+            <h1>Inscripción</h1>
+            <p>Completa el formulario para registrarte.</p>
+        </div>
+        <form id="inscriptionForm" class="card">
+            <h2>Datos del participante</h2>
+            <label>
+                Nombre
+                <input id="participantNombre" required maxlength="100" />
+            </label>
+            <label>
+                Apellido
+                <input id="participantApellido" required maxlength="100" />
+            </label>
+            <label>
+                Edad
+                <input id="participantEdad" type="number" min="0" max="120" required />
+            </label>
+            <label>
+                Teléfono
+                <input id="participantTelefono" required maxlength="20" />
+            </label>
+            <label>
+                Correo
+                <input id="participantCorreo" type="email" required maxlength="150" />
+            </label>
+            <button type="submit">Registrar inscripción</button>
+        </form>
+
+        <div id="status" class="status" aria-live="polite"></div>
+    </div>
+
+    <script src="supabase.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
